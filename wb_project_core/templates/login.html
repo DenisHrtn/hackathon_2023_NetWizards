@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<h1 style="text-align: center; margin-top: 30px;">Войдите в Ваш аккаунт используя логин и пароль</h1>
+
+<div class="login-page" id="login-page">
+    <form method="post">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn-login-submit" type="submit">Войти</button>
+        <p>Нет аккаунта?</p>
+        <a href="http://127.0.0.1:8000/registration/" class="signup-button-1"
+           id="signup-button-1">Зарегистрироваться</a>
+    </form>
+</div>
+{% endblock %}
