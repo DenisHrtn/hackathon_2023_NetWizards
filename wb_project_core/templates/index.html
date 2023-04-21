@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Сервис для WB</title>
@@ -7,6 +7,44 @@
 </head>
 <body>
 {% block content %}
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>My Website</h1>
+    <p>Welcome to my website!</p>
+</header>
+<main>
+    <h2>Featured Work</h2>
+    <div class="featured-work">
+        <a href="#" class="work-item">
+            <img src="img/work-1.jpg" alt="Work 1">
+            <h3>Project 1</h3>
+        </a>
+        <a href="#" class="work-item">
+            <img src="img/work-2.jpg" alt="Work 2">
+            <h3>Project 2</h3>
+        </a>
+        <a href="#" class="work-item">
+            <img src="img/work-3.jpg" alt="Work 3">
+            <h3>Project 3</h3>
+        </a>
+        <a href="#" class="work-item">
+            <img src="img/work-4.jpg" alt="Work 4">
+            <h3>Project 4</h3>
+        </a>
+    </div>
+</main>
+<footer>
+    <p>Copyright © My Website 2021.
+        All rights reserved.</p>
+</footer>
 {% endblock %}
 </body>
 </html>
