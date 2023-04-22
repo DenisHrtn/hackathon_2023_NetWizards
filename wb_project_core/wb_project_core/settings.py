@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'wb_project_core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hackathon-2023',
-        'USER': 'aleksejpetrovec',
+        'NAME': 'NetWizards',
+        'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
         'PORT': '5432',

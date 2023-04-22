@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.urls import reverse_lazy
 
@@ -69,11 +69,10 @@ def product_detail(request, pk):
 
 def product_view(request):
     products = Product.objects.all()
-    context = {}
-    for index, product in enumerate(products, start=1):
-        context[f'product_{str(index)}'] = {'title': product.title,
-                                            'description': product.description}
-    return render(request, 'product_view.html', context=context)
+    context = dict()
+
+    context['products'] = products
+    return render(request, 'product_view.html', context)
 
 
 @login_required()
