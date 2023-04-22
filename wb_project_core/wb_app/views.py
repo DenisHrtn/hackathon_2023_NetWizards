@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.urls import reverse_lazy
 
 from .forms import LoginForm, RegistrationForm, AddProductForm
@@ -74,3 +74,9 @@ def product_view(request):
         context[f'product_{str(index)}'] = {'title': product.title,
                                             'description': product.description}
     return render(request, 'product_view.html', context=context)
+
+
+@login_required()
+def logout(request):
+    logout(request.user)
+    return render(request, 'index.html', {})
