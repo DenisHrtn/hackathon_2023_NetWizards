@@ -196,3 +196,28 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.product-info-btn {
+    display: inline-block;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+}
+
+.product-info-btn:hover {
+    background-color: #0062cc;
+}
+
+.account-content {
+}
+
+.account-page {
+    align-content: center;
+}

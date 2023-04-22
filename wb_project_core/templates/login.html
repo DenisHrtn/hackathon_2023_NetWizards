@@ -6,7 +6,6 @@
 
 <div class="login-page" id="login-page">
     <form method="post">
-
         {% csrf_token %}
         {{ form.as_p }}
         <button class="btn-login-submit" type="submit">Войти</button>

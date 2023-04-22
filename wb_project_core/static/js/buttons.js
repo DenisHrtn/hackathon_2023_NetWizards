@@ -7,14 +7,6 @@ loginBtn.addEventListener('click', () => {
     window.location.href = 'http://127.0.0.1:8000/login/';
 });
 
-logoutBtn.addEventListener('click', () => {
-
-});
-
-accountBtn.addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:8000/account/';
-});
-
 registerBtn.addEventListener('click', () => {
     window.location.href = 'http://127.0.0.1:8000/registration/';
 });
